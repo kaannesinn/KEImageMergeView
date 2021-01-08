@@ -1,0 +1,44 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - IBAnimatable (6.1.0)
+  - Kingfisher (6.0.1)
+  - SwiftMessages (8.0.5):
+    - SwiftMessages/App (= 8.0.5)
+  - SwiftMessages/App (8.0.5)
+
+DEPENDENCIES:
+  - AFNetworking
+  - IBAnimatable
+  - Kingfisher
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - IBAnimatable
+    - Kingfisher
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  Kingfisher: adde87a4f74f6a3845395769354efff593581740
+  SwiftMessages: 539fd54a766bf08ec667e90aa141c44b8b8aaa55
+
+PODFILE CHECKSUM: aac56455e30acf4e027b1757ec9a49a5f0c7a51a
+
+COCOAPODS: 1.10.0

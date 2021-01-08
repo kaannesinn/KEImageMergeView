@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82C821D525A8E445005F1578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C821D425A8E445005F1578 /* AppDelegate.swift */; };
+		82C821D925A8E445005F1578 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C821D825A8E445005F1578 /* ViewController.swift */; };
+		82C821DC25A8E445005F1578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C821DA25A8E445005F1578 /* Main.storyboard */; };
+		82C821DE25A8E446005F1578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C821DD25A8E446005F1578 /* Assets.xcassets */; };
+		82C821E125A8E446005F1578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C821DF25A8E446005F1578 /* LaunchScreen.storyboard */; };
+		82C821EC25A8E446005F1578 /* KEImageMergeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C821EB25A8E446005F1578 /* KEImageMergeViewTests.swift */; };
+		82C821F725A8E446005F1578 /* KEImageMergeViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C821F625A8E446005F1578 /* KEImageMergeViewUITests.swift */; };
+		F698C242126560F779151CCA /* Pods_KEImageMergeView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7476A6D35915344BBDCE1F00 /* Pods_KEImageMergeView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82C821E825A8E446005F1578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C821C925A8E445005F1578 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82C821D025A8E445005F1578;
+			remoteInfo = KEImageMergeView;
+		};
+		82C821F325A8E446005F1578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C821C925A8E445005F1578 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82C821D025A8E445005F1578;
+			remoteInfo = KEImageMergeView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46C579DF191B428D51ACE9EA /* Pods-KEImageMergeView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KEImageMergeView.debug.xcconfig"; path = "Target Support Files/Pods-KEImageMergeView/Pods-KEImageMergeView.debug.xcconfig"; sourceTree = "<group>"; };
+		7476A6D35915344BBDCE1F00 /* Pods_KEImageMergeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KEImageMergeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7560E6644F48A34FDF6935F9 /* Pods-KEImageMergeView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KEImageMergeView.release.xcconfig"; path = "Target Support Files/Pods-KEImageMergeView/Pods-KEImageMergeView.release.xcconfig"; sourceTree = "<group>"; };
+		82C821D125A8E445005F1578 /* KEImageMergeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KEImageMergeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C821D425A8E445005F1578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82C821D825A8E445005F1578 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82C821DB25A8E445005F1578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82C821DD25A8E446005F1578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82C821E025A8E446005F1578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82C821E225A8E446005F1578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C821E725A8E446005F1578 /* KEImageMergeViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KEImageMergeViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C821EB25A8E446005F1578 /* KEImageMergeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEImageMergeViewTests.swift; sourceTree = "<group>"; };
+		82C821ED25A8E446005F1578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C821F225A8E446005F1578 /* KEImageMergeViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KEImageMergeViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C821F625A8E446005F1578 /* KEImageMergeViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEImageMergeViewUITests.swift; sourceTree = "<group>"; };
+		82C821F825A8E446005F1578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82C821CE25A8E445005F1578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F698C242126560F779151CCA /* Pods_KEImageMergeView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C821E425A8E446005F1578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C821EF25A8E446005F1578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AE83956BB80F7E8D9DDE6FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7476A6D35915344BBDCE1F00 /* Pods_KEImageMergeView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C8A86E3E20B694A328D742D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46C579DF191B428D51ACE9EA /* Pods-KEImageMergeView.debug.xcconfig */,
+				7560E6644F48A34FDF6935F9 /* Pods-KEImageMergeView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		82C821C825A8E445005F1578 = {
+			isa = PBXGroup;
+			children = (
+				82C821D325A8E445005F1578 /* KEImageMergeView */,
+				82C821EA25A8E446005F1578 /* KEImageMergeViewTests */,
+				82C821F525A8E446005F1578 /* KEImageMergeViewUITests */,
+				82C821D225A8E445005F1578 /* Products */,
+				5C8A86E3E20B694A328D742D /* Pods */,
+				1AE83956BB80F7E8D9DDE6FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		82C821D225A8E445005F1578 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82C821D125A8E445005F1578 /* KEImageMergeView.app */,
+				82C821E725A8E446005F1578 /* KEImageMergeViewTests.xctest */,
+				82C821F225A8E446005F1578 /* KEImageMergeViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82C821D325A8E445005F1578 /* KEImageMergeView */ = {
+			isa = PBXGroup;
+			children = (
+				82C821D425A8E445005F1578 /* AppDelegate.swift */,
+				82C821D825A8E445005F1578 /* ViewController.swift */,
+				82C821DA25A8E445005F1578 /* Main.storyboard */,
+				82C821DD25A8E446005F1578 /* Assets.xcassets */,
+				82C821DF25A8E446005F1578 /* LaunchScreen.storyboard */,
+				82C821E225A8E446005F1578 /* Info.plist */,
+			);
+			path = KEImageMergeView;
+			sourceTree = "<group>";
+		};
+		82C821EA25A8E446005F1578 /* KEImageMergeViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				82C821EB25A8E446005F1578 /* KEImageMergeViewTests.swift */,
+				82C821ED25A8E446005F1578 /* Info.plist */,
+			);
+			path = KEImageMergeViewTests;
+			sourceTree = "<group>";
+		};
+		82C821F525A8E446005F1578 /* KEImageMergeViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				82C821F625A8E446005F1578 /* KEImageMergeViewUITests.swift */,
+				82C821F825A8E446005F1578 /* Info.plist */,
+			);
+			path = KEImageMergeViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82C821D025A8E445005F1578 /* KEImageMergeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C821FB25A8E446005F1578 /* Build configuration list for PBXNativeTarget "KEImageMergeView" */;
+			buildPhases = (
+				DAB06A4E5BC7975BAE102C35 /* [CP] Check Pods Manifest.lock */,
+				82C821CD25A8E445005F1578 /* Sources */,
+				82C821CE25A8E445005F1578 /* Frameworks */,
+				82C821CF25A8E445005F1578 /* Resources */,
+				2D274EDEF70CD777AB67EF8E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KEImageMergeView;
+			productName = KEImageMergeView;
+			productReference = 82C821D125A8E445005F1578 /* KEImageMergeView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82C821E625A8E446005F1578 /* KEImageMergeViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C821FE25A8E446005F1578 /* Build configuration list for PBXNativeTarget "KEImageMergeViewTests" */;
+			buildPhases = (
+				82C821E325A8E446005F1578 /* Sources */,
+				82C821E425A8E446005F1578 /* Frameworks */,
+				82C821E525A8E446005F1578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82C821E925A8E446005F1578 /* PBXTargetDependency */,
+			);
+			name = KEImageMergeViewTests;
+			productName = KEImageMergeViewTests;
+			productReference = 82C821E725A8E446005F1578 /* KEImageMergeViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82C821F125A8E446005F1578 /* KEImageMergeViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C8220125A8E446005F1578 /* Build configuration list for PBXNativeTarget "KEImageMergeViewUITests" */;
+			buildPhases = (
+				82C821EE25A8E446005F1578 /* Sources */,
+				82C821EF25A8E446005F1578 /* Frameworks */,
+				82C821F025A8E446005F1578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82C821F425A8E446005F1578 /* PBXTargetDependency */,
+			);
+			name = KEImageMergeViewUITests;
+			productName = KEImageMergeViewUITests;
+			productReference = 82C821F225A8E446005F1578 /* KEImageMergeViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82C821C925A8E445005F1578 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					82C821D025A8E445005F1578 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					82C821E625A8E446005F1578 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 82C821D025A8E445005F1578;
+					};
+					82C821F125A8E446005F1578 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 82C821D025A8E445005F1578;
+					};
+				};
+			};
+			buildConfigurationList = 82C821CC25A8E445005F1578 /* Build configuration list for PBXProject "KEImageMergeView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82C821C825A8E445005F1578;
+			productRefGroup = 82C821D225A8E445005F1578 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82C821D025A8E445005F1578 /* KEImageMergeView */,
+				82C821E625A8E446005F1578 /* KEImageMergeViewTests */,
+				82C821F125A8E446005F1578 /* KEImageMergeViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82C821CF25A8E445005F1578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C821E125A8E446005F1578 /* LaunchScreen.storyboard in Resources */,
+				82C821DE25A8E446005F1578 /* Assets.xcassets in Resources */,
+				82C821DC25A8E445005F1578 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C821E525A8E446005F1578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C821F025A8E446005F1578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D274EDEF70CD777AB67EF8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KEImageMergeView/Pods-KEImageMergeView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KEImageMergeView/Pods-KEImageMergeView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KEImageMergeView/Pods-KEImageMergeView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB06A4E5BC7975BAE102C35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KEImageMergeView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82C821CD25A8E445005F1578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C821D925A8E445005F1578 /* ViewController.swift in Sources */,
+				82C821D525A8E445005F1578 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C821E325A8E446005F1578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C821EC25A8E446005F1578 /* KEImageMergeViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C821EE25A8E446005F1578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C821F725A8E446005F1578 /* KEImageMergeViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82C821E925A8E446005F1578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82C821D025A8E445005F1578 /* KEImageMergeView */;
+			targetProxy = 82C821E825A8E446005F1578 /* PBXContainerItemProxy */;
+		};
+		82C821F425A8E446005F1578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82C821D025A8E445005F1578 /* KEImageMergeView */;
+			targetProxy = 82C821F325A8E446005F1578 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82C821DA25A8E445005F1578 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C821DB25A8E445005F1578 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82C821DF25A8E446005F1578 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C821E025A8E446005F1578 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82C821F925A8E446005F1578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82C821FA25A8E446005F1578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82C821FC25A8E446005F1578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C579DF191B428D51ACE9EA /* Pods-KEImageMergeView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DL362RMF7;
+				INFOPLIST_FILE = KEImageMergeView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaanesin.KEImageMergeView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82C821FD25A8E446005F1578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7560E6644F48A34FDF6935F9 /* Pods-KEImageMergeView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DL362RMF7;
+				INFOPLIST_FILE = KEImageMergeView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaanesin.KEImageMergeView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82C821FF25A8E446005F1578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DL362RMF7;
+				INFOPLIST_FILE = KEImageMergeViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaanesin.KEImageMergeViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KEImageMergeView.app/KEImageMergeView";
+			};
+			name = Debug;
+		};
+		82C8220025A8E446005F1578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DL362RMF7;
+				INFOPLIST_FILE = KEImageMergeViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaanesin.KEImageMergeViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KEImageMergeView.app/KEImageMergeView";
+			};
+			name = Release;
+		};
+		82C8220225A8E446005F1578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DL362RMF7;
+				INFOPLIST_FILE = KEImageMergeViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaanesin.KEImageMergeViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KEImageMergeView;
+			};
+			name = Debug;
+		};
+		82C8220325A8E446005F1578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DL362RMF7;
+				INFOPLIST_FILE = KEImageMergeViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaanesin.KEImageMergeViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KEImageMergeView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82C821CC25A8E445005F1578 /* Build configuration list for PBXProject "KEImageMergeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C821F925A8E446005F1578 /* Debug */,
+				82C821FA25A8E446005F1578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82C821FB25A8E446005F1578 /* Build configuration list for PBXNativeTarget "KEImageMergeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C821FC25A8E446005F1578 /* Debug */,
+				82C821FD25A8E446005F1578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82C821FE25A8E446005F1578 /* Build configuration list for PBXNativeTarget "KEImageMergeViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C821FF25A8E446005F1578 /* Debug */,
+				82C8220025A8E446005F1578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82C8220125A8E446005F1578 /* Build configuration list for PBXNativeTarget "KEImageMergeViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C8220225A8E446005F1578 /* Debug */,
+				82C8220325A8E446005F1578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82C821C925A8E445005F1578 /* Project object */;
+}
