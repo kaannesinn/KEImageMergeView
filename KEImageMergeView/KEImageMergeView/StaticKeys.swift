@@ -16,4 +16,8 @@ struct StaticKeys {
     struct UserDefaults {
         static let OverlayImageModel = "OverlayImageModel"
     }
+    
+    struct Texts {
+        static let None = "None"
+    }
 }
