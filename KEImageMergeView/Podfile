@@ -3,9 +3,9 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'KEImageMergeView' do
-	pod 'SwiftMessages'
+  pod 'Loaf'
 	pod 'IBAnimatable'
-	pod 'AFNetworking'
+	pod 'Alamofire'
 	pod 'Kingfisher'
 end
 

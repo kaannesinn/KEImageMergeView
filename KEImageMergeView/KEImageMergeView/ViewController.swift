@@ -11,9 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+        APIManager.shared.fetchOverlays(sender: self) { (overlayModel) in
+            guard let overlayModel = overlayModel else { return }
+            debugPrint(overlayModel)
+        }
+    }
 
 }
 
