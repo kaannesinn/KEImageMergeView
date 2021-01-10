@@ -20,40 +20,7 @@
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZR-hR-82n">
                                 <rect key="frame" x="0.0" y="88" width="428" height="644"/>
-                                <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTp-xv-5zW">
-                                        <rect key="frame" x="0.0" y="188.66666666666669" width="428" height="267"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jV7-6F-nt4">
-                                                <rect key="frame" x="0.0" y="0.0" width="428" height="267"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QoR-UN-8GX">
-                                                <rect key="frame" x="0.0" y="0.0" width="428" height="267"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="QoR-UN-8GX" firstAttribute="leading" secondItem="jV7-6F-nt4" secondAttribute="leading" id="AQJ-Kn-tRz"/>
-                                            <constraint firstItem="QoR-UN-8GX" firstAttribute="centerX" secondItem="jV7-6F-nt4" secondAttribute="centerX" id="Bbb-qG-8z8"/>
-                                            <constraint firstAttribute="height" constant="267" id="CLO-jq-LDS"/>
-                                            <constraint firstItem="jV7-6F-nt4" firstAttribute="top" secondItem="sTp-xv-5zW" secondAttribute="top" id="LLq-qT-pwH"/>
-                                            <constraint firstItem="jV7-6F-nt4" firstAttribute="centerX" secondItem="sTp-xv-5zW" secondAttribute="centerX" id="MG9-mD-tRk"/>
-                                            <constraint firstItem="jV7-6F-nt4" firstAttribute="centerY" secondItem="sTp-xv-5zW" secondAttribute="centerY" id="Uq9-Rs-YBm"/>
-                                            <constraint firstItem="jV7-6F-nt4" firstAttribute="leading" secondItem="sTp-xv-5zW" secondAttribute="leading" id="WwJ-4k-HsI"/>
-                                            <constraint firstItem="QoR-UN-8GX" firstAttribute="top" secondItem="jV7-6F-nt4" secondAttribute="top" id="Zg1-5K-JGu"/>
-                                            <constraint firstItem="jV7-6F-nt4" firstAttribute="width" secondItem="sTp-xv-5zW" secondAttribute="width" id="fln-jX-tWZ"/>
-                                            <constraint firstItem="QoR-UN-8GX" firstAttribute="centerY" secondItem="jV7-6F-nt4" secondAttribute="centerY" id="vHs-sV-Xfv"/>
-                                            <constraint firstItem="jV7-6F-nt4" firstAttribute="height" secondItem="sTp-xv-5zW" secondAttribute="height" id="x2g-TY-Nbc"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="sTp-xv-5zW" firstAttribute="centerY" secondItem="LZR-hR-82n" secondAttribute="centerY" id="0aA-UV-g2X"/>
-                                    <constraint firstItem="sTp-xv-5zW" firstAttribute="leading" secondItem="LZR-hR-82n" secondAttribute="leading" id="9JV-16-jaE"/>
-                                    <constraint firstItem="sTp-xv-5zW" firstAttribute="centerX" secondItem="LZR-hR-82n" secondAttribute="centerX" id="C1n-Ht-dI4"/>
-                                    <constraint firstItem="sTp-xv-5zW" firstAttribute="width" secondItem="LZR-hR-82n" secondAttribute="width" id="h7z-L4-kK6"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLy-hH-S2m">
                                 <rect key="frame" x="0.0" y="732" width="428" height="160"/>
@@ -148,9 +115,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="collectionOverlay" destination="2yW-PO-dJn" id="xKW-gO-vJ3"/>
-                        <outlet property="imgBack" destination="jV7-6F-nt4" id="wRN-Se-QLf"/>
-                        <outlet property="imgFront" destination="QoR-UN-8GX" id="c8c-eP-h0V"/>
-                        <outlet property="viewForMerge" destination="sTp-xv-5zW" id="jsk-ZN-6mv"/>
+                        <outlet property="viewBack" destination="LZR-hR-82n" id="3ud-Kv-sEt"/>
                         <outlet property="viewForOverlays" destination="VLy-hH-S2m" id="CeJ-bh-low"/>
                     </connections>
                 </viewController>

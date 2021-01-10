@@ -25,17 +25,17 @@ extension ViewController: UIGestureRecognizerDelegate {
                 view.center = CGPoint(x: view.center.x, y: 0)
             }
             
-            if view.center.x >= self.imgFront.frame.width && view.center.y >= self.imgFront.frame.height {
-                view.center = CGPoint(x: self.imgFront.frame.width, y: self.imgFront.frame.height)
+            if view.center.x >= self.viewForMerge.imgFront.frame.width && view.center.y >= self.viewForMerge.imgFront.frame.height {
+                view.center = CGPoint(x: self.viewForMerge.imgFront.frame.width, y: self.viewForMerge.imgFront.frame.height)
             }
-            else if view.center.x >= self.imgFront.frame.width && view.center.y < self.imgFront.frame.height {
-                view.center = CGPoint(x: self.imgFront.frame.width, y: view.center.y)
+            else if view.center.x >= self.viewForMerge.imgFront.frame.width && view.center.y < self.viewForMerge.imgFront.frame.height {
+                view.center = CGPoint(x: self.viewForMerge.imgFront.frame.width, y: view.center.y)
             }
-            else if view.center.x < self.imgFront.frame.width && view.center.y >= self.imgFront.frame.height {
-                view.center = CGPoint(x: view.center.x, y: self.imgFront.frame.height)
+            else if view.center.x < self.viewForMerge.imgFront.frame.width && view.center.y >= self.viewForMerge.imgFront.frame.height {
+                view.center = CGPoint(x: view.center.x, y: self.viewForMerge.imgFront.frame.height)
             }
             
-            recognizer.setTranslation(.zero, in: self.imgFront)
+            recognizer.setTranslation(.zero, in: self.viewForMerge.imgFront)
         }
     }
     

@@ -11,9 +11,8 @@ import Loaf
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var viewForMerge: UIView!
-    @IBOutlet weak var imgBack: UIImageView!
-    @IBOutlet weak var imgFront: UIImageView!
+    @IBOutlet weak var viewBack: UIView!
+    var viewForMerge = Bundle.main.loadNibNamed("MergingView", owner: self, options: nil)?.first as! MergingView
     @IBOutlet weak var viewForOverlays: UIView!
     @IBOutlet weak var collectionOverlay: UICollectionView!
     var overlays: OverlayModel? = nil
@@ -22,10 +21,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.imgBack.kf.setImage(with: URL(string: "https://images2.alphacoders.com/284/thumb-1920-284142.jpg"))
-        
-        self.addGestureRecognizers()
-        
+        self.viewBack.addSubview(self.viewForMerge)
+//        let url = URL(string: "https://images2.alphacoders.com/284/thumb-1920-284142.jpg")!
+        let url = URL(string: "https://images5.fanpop.com/image/photos/27900000/Maldives-maldives-27942872-1280-851.png")!
+        self.viewForMerge.imgBack.kf.setImage(with: url) { (result) in
+            switch result {
+            case .success(let value):
+                let h = self.viewBack.frame.width * value.image.size.height / value.image.size.width
+                self.viewForMerge.frame = CGRect(x: 0, y: self.viewBack.frame.height/2 - h/2, width: self.viewBack.frame.width, height: h)
+                self.viewForMerge.imgBack.image = value.image
+                self.addGestureRecognizers()
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+                Loaf("\(StaticKeys.Error.NoFrontImage)", state: .error, location: .bottom, presentingDirection: .vertical, dismissingDirection: .vertical, sender: self).show()
+            }
+        }
+                
         APIManager.shared.fetchOverlays(sender: self) { (overlayModel) in
             guard let overlayModel = overlayModel else { return }
             debugPrint(overlayModel)
@@ -123,10 +134,10 @@ class ViewController: UIViewController {
         panGesture.delegate = self
         pinchGesture.delegate = self
         rotateGesture.delegate = self
-        self.imgFront.addGestureRecognizer(panGesture)
-        self.imgFront.addGestureRecognizer(pinchGesture)
-        self.imgFront.addGestureRecognizer(rotateGesture)
-        self.imgFront.isUserInteractionEnabled = true
+        self.viewForMerge.imgFront.addGestureRecognizer(panGesture)
+        self.viewForMerge.imgFront.addGestureRecognizer(pinchGesture)
+        self.viewForMerge.imgFront.addGestureRecognizer(rotateGesture)
+        self.viewForMerge.imgFront.isUserInteractionEnabled = true
     }
 
 }
