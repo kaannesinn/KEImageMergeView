@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionOverlay: UICollectionView!
     var overlays: OverlayModel? = nil
     var selectedCellIndex: Int = 0
+    @IBOutlet weak var imgHistogram: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
                 self.viewForMerge.frame = CGRect(x: 0, y: self.viewBack.frame.height/2 - h/2, width: self.viewBack.frame.width, height: h)
                 self.viewForMerge.imgBack.image = value.image
                 self.addGestureRecognizers()
+                self.imgHistogram.image = self.viewForMerge.showHistogram(image: self.viewForMerge.imgBack.image!)
             case .failure(let error):
                 debugPrint(error.localizedDescription)
                 Loaf("\(StaticKeys.Error.NoFrontImage)", state: .error, location: .bottom, presentingDirection: .vertical, dismissingDirection: .vertical, sender: self).show()
@@ -46,8 +48,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func saveTouched(_ sender: Any) {
-        let overlayedImage = AppUtils.applyOverlayImage(view: self.viewForMerge)
-        
+        let overlayedImage = AppUtils.applyOverlayImage(view: self.viewForMerge.viewContainer)
+        self.imgHistogram.image = self.viewForMerge.showHistogram(image: overlayedImage!)
+
         let alert = UIAlertController(title: "", message: StaticKeys.Texts.WhereToSaveImage, preferredStyle: .actionSheet)
         let pngSaveAction = UIAlertAction(title: StaticKeys.Texts.PNG_Disk, style: .default) { (action) in
             guard let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("overlayedImage_\(self.selectedCellIndex).png") else { return }

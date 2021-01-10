@@ -10,6 +10,7 @@
 		8228D4AE25A9F8C500BF5A78 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8228D4AD25A9F8C500BF5A78 /* BaseNavigationController.swift */; };
 		8228D4B625A9FB0200BF5A78 /* OverlayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8228D4B525A9FB0200BF5A78 /* OverlayCell.swift */; };
 		8228D4BB25AA0D0000BF5A78 /* ViewController+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8228D4BA25AA0D0000BF5A78 /* ViewController+Collection.swift */; };
+		8229025525AB5ABF008287DA /* TTMHistogramHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8229025425AB5ABF008287DA /* TTMHistogramHelper.m */; };
 		827B5F8025AB4BCD006BB070 /* MergingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B5F7F25AB4BCD006BB070 /* MergingView.swift */; };
 		827B5F8525AB4C04006BB070 /* MergingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827B5F8425AB4C04006BB070 /* MergingView.xib */; };
 		82C5A19225AA2BD6002D323A /* front.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C5A19025AA2BD6002D323A /* front.png */; };
@@ -53,6 +54,9 @@
 		8228D4AD25A9F8C500BF5A78 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		8228D4B525A9FB0200BF5A78 /* OverlayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayCell.swift; sourceTree = "<group>"; };
 		8228D4BA25AA0D0000BF5A78 /* ViewController+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Collection.swift"; sourceTree = "<group>"; };
+		8229025225AB5ABF008287DA /* KEImageMergeView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KEImageMergeView-Bridging-Header.h"; sourceTree = "<group>"; };
+		8229025325AB5ABF008287DA /* TTMHistogramHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMHistogramHelper.h; sourceTree = "<group>"; };
+		8229025425AB5ABF008287DA /* TTMHistogramHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMHistogramHelper.m; sourceTree = "<group>"; };
 		827B5F7F25AB4BCD006BB070 /* MergingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergingView.swift; sourceTree = "<group>"; };
 		827B5F8425AB4C04006BB070 /* MergingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MergingView.xib; sourceTree = "<group>"; };
 		82C5A19025AA2BD6002D323A /* front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = front.png; sourceTree = "<group>"; };
@@ -160,9 +164,12 @@
 				82C821DA25A8E445005F1578 /* Main.storyboard */,
 				82C5A19125AA2BD6002D323A /* back.jpg */,
 				82C5A19025AA2BD6002D323A /* front.png */,
+				8229025325AB5ABF008287DA /* TTMHistogramHelper.h */,
+				8229025425AB5ABF008287DA /* TTMHistogramHelper.m */,
 				82C821DD25A8E446005F1578 /* Assets.xcassets */,
 				82C821DF25A8E446005F1578 /* LaunchScreen.storyboard */,
 				82C821E225A8E446005F1578 /* Info.plist */,
+				8229025225AB5ABF008287DA /* KEImageMergeView-Bridging-Header.h */,
 			);
 			path = KEImageMergeView;
 			sourceTree = "<group>";
@@ -254,6 +261,7 @@
 				TargetAttributes = {
 					82C821D025A8E445005F1578 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					82C821E625A8E446005F1578 = {
 						CreatedOnToolsVersion = 12.2;
@@ -372,6 +380,7 @@
 				8228D4AE25A9F8C500BF5A78 /* BaseNavigationController.swift in Sources */,
 				8228D4B625A9FB0200BF5A78 /* OverlayCell.swift in Sources */,
 				82C5A19825AA438B002D323A /* ViewController+Gesture.swift in Sources */,
+				8229025525AB5ABF008287DA /* TTMHistogramHelper.m in Sources */,
 				82CC954425A900D900D893F1 /* AppUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DL362RMF7;
 				INFOPLIST_FILE = KEImageMergeView/Info.plist;
@@ -560,6 +570,8 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaanesin.KEImageMergeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KEImageMergeView/KEImageMergeView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -571,6 +583,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DL362RMF7;
 				INFOPLIST_FILE = KEImageMergeView/Info.plist;
@@ -582,6 +595,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaanesin.KEImageMergeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KEImageMergeView/KEImageMergeView-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

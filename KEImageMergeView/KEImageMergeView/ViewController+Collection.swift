@@ -56,6 +56,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         
         if indexPath.row == 0 {
             self.viewForMerge.imgFront.image = nil
+            self.imgHistogram.image = self.viewForMerge.showHistogram(image: self.viewForMerge.imgBack.image!)
         }
         else {
             self.viewForMerge.imgFront.transform = .identity
@@ -68,6 +69,9 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
                 switch result {
                 case .success(let value):
                     self.viewForMerge.imgFront.image = value.image
+                    
+                    let overlayedImage = AppUtils.applyOverlayImage(view: self.viewForMerge.viewContainer)
+                    self.imgHistogram.image = self.viewForMerge.showHistogram(image: overlayedImage!)
                 case .failure(let error):
                     debugPrint(error.localizedDescription)
                     Loaf("\(StaticKeys.Error.NoFrontImage)", state: .error, location: .bottom, presentingDirection: .vertical, dismissingDirection: .vertical, sender: self).show()

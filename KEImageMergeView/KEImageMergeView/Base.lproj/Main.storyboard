@@ -20,7 +20,21 @@
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZR-hR-82n">
                                 <rect key="frame" x="0.0" y="88" width="428" height="644"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uCj-XD-vir">
+                                        <rect key="frame" x="340" y="518" width="88" height="126"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88" id="Dfu-KH-IQd"/>
+                                            <constraint firstAttribute="height" constant="126" id="h3v-zv-Qda"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uCj-XD-vir" secondAttribute="trailing" id="G6v-qh-Sy8"/>
+                                    <constraint firstAttribute="bottom" secondItem="uCj-XD-vir" secondAttribute="bottom" id="dbR-U2-B4B"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLy-hH-S2m">
                                 <rect key="frame" x="0.0" y="732" width="428" height="160"/>
@@ -115,6 +129,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="collectionOverlay" destination="2yW-PO-dJn" id="xKW-gO-vJ3"/>
+                        <outlet property="imgHistogram" destination="uCj-XD-vir" id="Bj1-fU-uld"/>
                         <outlet property="viewBack" destination="LZR-hR-82n" id="3ud-Kv-sEt"/>
                         <outlet property="viewForOverlays" destination="VLy-hH-S2m" id="CeJ-bh-low"/>
                     </connections>
