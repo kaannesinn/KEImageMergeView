@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Loaf
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -52,5 +53,27 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         self.collectionOverlay.reloadData()
         self.collectionOverlay.layoutIfNeeded()
         self.collectionOverlay.contentOffset = offset
+        
+        if indexPath.row == 0 {
+            self.imgFront.image = nil
+        }
+        else {
+            self.imgFront.transform = .identity
+            self.imgFront.frame = CGRect(x: 0, y: 0, width: self.imgFront.frame.width, height: self.imgFront.frame.height)
+            
+            let item = self.overlays?[indexPath.row-1]
+            guard let overlayURL = item?.overlayURL else { return }
+            
+            self.imgFront.kf.setImage(with: URL(string: overlayURL)) { result in
+                switch result {
+                case .success(let value):
+                    self.imgFront.image = value.image
+                case .failure(let error):
+                    debugPrint(error.localizedDescription)
+                    Loaf("\(StaticKeys.Error.NoFrontImage)", state: .error, location: .bottom, presentingDirection: .vertical, dismissingDirection: .vertical, sender: self).show()
+                }
+            }
+        }
     }
+    
 }

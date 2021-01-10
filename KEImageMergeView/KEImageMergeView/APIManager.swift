@@ -12,7 +12,7 @@ import Loaf
 class APIManager: NSObject {
     static let shared = APIManager()
     
-    var baseUrl = {
+    lazy var baseUrl = {
         return "https://lyrebirdstudio.s3-us-west-2.amazonaws.com/candidates/overlay.json"
     }()
     
@@ -30,7 +30,7 @@ class APIManager: NSObject {
         }
         else {
             AF.request(APIManager.shared.baseUrl).responseJSON { [weak self] (response) in
-                guard let self = self else { return }
+                guard let _ = self else { return }
                 debugPrint(response)
                 
                 if let error = response.error {
