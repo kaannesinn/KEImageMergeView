@@ -24,7 +24,9 @@ class ViewController: UIViewController {
 
         self.viewBack.addSubview(self.viewForMerge)
 //        let url = URL(string: "https://images2.alphacoders.com/284/thumb-1920-284142.jpg")!
-        let url = URL(string: "https://images5.fanpop.com/image/photos/27900000/Maldives-maldives-27942872-1280-851.png")!
+//        let url = URL(string: "https://images5.fanpop.com/image/photos/27900000/Maldives-maldives-27942872-1280-851.png")!
+        let url = URL(string: "https://c.stocksy.com/a/vu8300/z9/749265.jpg")!
+
         self.viewForMerge.imgBack.kf.setImage(with: url) { (result) in
             switch result {
             case .success(let value):
